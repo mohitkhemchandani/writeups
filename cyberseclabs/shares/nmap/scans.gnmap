@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Sep  7 23:53:55 2020 as: nmap -sC -sV -oA nmap/scans 172.31.1.7
+Host: 172.31.1.7 ()	Status: Up
+Host: 172.31.1.7 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 2049/open/tcp//nfs_acl//3 (RPC #100227)/	Ignored State: closed (996)
+# Nmap done at Mon Sep  7 23:54:13 2020 -- 1 IP address (1 host up) scanned in 18.35 seconds

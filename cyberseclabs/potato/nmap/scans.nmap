@@ -1,0 +1,50 @@
+# Nmap 7.80 scan initiated Tue Sep  8 00:19:12 2020 as: nmap -sC -sV -oA nmap/scans 172.31.1.19
+Nmap scan report for 172.31.1.19
+Host is up (0.34s latency).
+Not shown: 989 closed ports
+PORT      STATE SERVICE            VERSION
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp  open  ssl/ms-wbt-server?
+| rdp-ntlm-info: 
+|   Target_Name: POTATO
+|   NetBIOS_Domain_Name: POTATO
+|   NetBIOS_Computer_Name: POTATO
+|   DNS_Domain_Name: Potato
+|   DNS_Computer_Name: Potato
+|   Product_Version: 6.3.9600
+|_  System_Time: 2020-09-07T18:51:22+00:00
+| ssl-cert: Subject: commonName=Potato
+| Not valid before: 2020-05-15T13:18:41
+|_Not valid after:  2020-11-14T13:18:41
+8080/tcp  open  http               Jetty 9.4.z-SNAPSHOT
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Jetty(9.4.z-SNAPSHOT)
+|_http-title: Site doesn't have a title (text/html;charset=utf-8).
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49161/tcp open  msrpc              Microsoft Windows RPC
+49163/tcp open  msrpc              Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_nbstat: NetBIOS name: POTATO, NetBIOS user: <unknown>, NetBIOS MAC: 0a:f8:40:a2:d8:5c (unknown)
+|_smb-os-discovery: ERROR: Script execution failed (use -d to debug)
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-09-07T18:51:22
+|_  start_date: 2020-09-07T17:45:20
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Sep  8 00:21:29 2020 -- 1 IP address (1 host up) scanned in 137.13 seconds
